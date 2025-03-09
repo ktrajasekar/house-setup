@@ -63,3 +63,70 @@ The `ios` and `android` folder are gitignored in the project by default as they 
 ---
 
 Demo assets are from [lucide.dev](https://lucide.dev/)
+
+
+---
+title: React Native
+description: A guide to React Native including setup, navigation, and native components.
+published: false
+# cover_image: https://direct_url_to_image.jpg
+# Use a ratio of 100:42 for best results.
+# published_at: 2025-01-25 03:35 +0000
+---
+
+## 🚀 Create a New React Native Project Using Expo
+[Expo Documentation - Create Expo Project](https://docs.expo.dev/more/create-expo/)
+
+## 🔀 Add Navigation to React Native
+[React Navigation - Getting Started](https://reactnavigation.org/docs/getting-started)
+
+## ⚖️ Difference Between CLI and EXPO
+
+| Feature                        | Expo Go                         | Expo CLI                          |
+|--------------------------------|--------------------------------|----------------------------------|
+| **Purpose**                    | Run & preview apps            | Manage & build Expo projects     |
+| **Installation Needed?**        | No (only install Expo Go app) | Yes (`npm install -g expo-cli`)  |
+| **Works with Custom Native Code?** | ❌ No | ✅ Yes (bare workflow) |
+| **Hot Reloading**              | ✅ Yes                         | ✅ Yes                            |
+| **Builds Standalone Apps?**     | ❌ No                         | ✅ Yes (`expo build`)             |
+| **Requires a Physical Device?** | ✅ Yes (or Emulator)         | ✅ Yes (for testing on devices)  |
+
+---
+
+## 📌 React Native Native Components with Props
+
+| Component            | Description                                      | Key Props |
+|----------------------|--------------------------------------------------|-----------|
+| **View**            | Container for other components (like `<div>`)   | `style`, `onLayout` |
+| **Text**            | Displays text content                           | `style`, `numberOfLines`, `ellipsizeMode` |
+| **Image**           | Displays images                                 | `source`, `resizeMode`, `style` |
+| **ScrollView**      | Scrollable container                            | `horizontal`, `showsVerticalScrollIndicator` |
+| **FlatList**        | Optimized list for large datasets               | `data`, `renderItem`, `keyExtractor` |
+| **SectionList**     | List with sections (grouped list)               | `sections`, `renderItem`, `renderSectionHeader` |
+| **TextInput**       | Input field for text entry                      | `value`, `onChangeText`, `keyboardType` |
+| **Button**          | Simple button component                         | `title`, `onPress`, `disabled` |
+| **Pressable**       | More flexible button                            | `onPress`, `onLongPress`, `style` |
+| **TouchableOpacity** | Button that fades when pressed                  | `onPress`, `activeOpacity` |
+| **TouchableHighlight** | Button that highlights when pressed           | `onPress`, `underlayColor` |
+| **Switch**         | A toggle switch                                  | `value`, `onValueChange` |
+| **Slider**         | Selects a value in a range                       | `value`, `onValueChange`, `minimumValue`, `maximumValue` |
+| **KeyboardAvoidingView** | Adjusts layout when keyboard appears       | `behavior`, `keyboardVerticalOffset` |
+| **Modal**          | Pop-up modal window                              | `visible`, `onRequestClose`, `animationType` |
+| **Alert**          | Shows a native alert                             | `title`, `message`, `buttons` |
+| **StatusBar**      | Controls the status bar appearance               | `hidden`, `barStyle`, `backgroundColor` |
+| **ActivityIndicator** | Displays a loading spinner                     | `animating`, `size`, `color` |
+| **ImageBackground** | Uses an image as a background                    | `source`, `style`, `resizeMode` |
+| **RefreshControl** | Enables pull-to-refresh in ScrollView            | `refreshing`, `onRefresh` |
+| **Vibration**      | Controls device vibration                        | `vibrate` (method) |
+| **Linking**        | Opens external links                             | `openURL`, `canOpenURL` (methods) |
+| **Share**          | Opens a share dialog                             | `share` (method) |
+| **Platform**       | Detects platform (iOS/Android)                   | `OS`, `Version`, `isTV` |
+| **PermissionsAndroid** | Manages Android permissions                  | `request`, `check` (methods) |
+| **NativeModules**  | Calls platform-specific native modules           | Varies by module |
+| **PixelRatio**     | Handles pixel density scaling                    | `get`, `roundToNearestPixel` |
+
+---
+
+## 🔗 Useful Links
+- [State of React Native 2024](https://results.2024.stateofreactnative.com/en-US)
+
